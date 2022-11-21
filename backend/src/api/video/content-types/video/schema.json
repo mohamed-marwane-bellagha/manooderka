@@ -4,7 +4,8 @@
   "info": {
     "singularName": "video",
     "pluralName": "videos",
-    "displayName": "Video"
+    "displayName": "Video",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,24 +16,29 @@
       "type": "string",
       "required": true
     },
-    "iframelink": {
-      "type": "text"
+    "url_video": {
+      "type": "text",
+      "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description_image": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "title_image": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description_video": {
-      "type": "string"
+      "type": "text",
+      "required": true
     }
   }
 }
